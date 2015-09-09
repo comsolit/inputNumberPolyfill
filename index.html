@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="comsolitInputNumberPolyfill">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style>
+      .inline { /*for IE*/
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
+
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    with ng-model, min, max and step
+    <div class="inline">
+      <input ng-model="hour" type="number" min="0" max="23" step="1" />:
+      <input ng-model="minute" type="number" min="0" max="59" step="1" />
+    </div>
+    <span ng-bind="hour"></span>:<span ng-bind="minute"></span><br/>
+    no step
+    <input type="number" min="5" max="10" /><br/>
+    no max
+    <input type="number" min="5" step="1" /><br/>
+    no min
+    <input type="number" max="10" step="1" /><br/>
+    just input type number
+    <input type="number" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="comsolitInputNumberPolyfill.js"></script>
+  </body>
+</html>

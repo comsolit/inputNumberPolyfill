@@ -1,0 +1,29 @@
+{
+  "name": "comsolit-input-number-polyfill",
+  "authors": [
+    "Thomas Koch <koch@comsolit.com>",
+    "Robert Pupel <pupel@comsolit.com>"
+  ],
+  "description": "Polyfill for IE input type=number",
+  "main": "comsolitInputNumberPolyfill.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "polyfill",
+    "angular",
+    "number"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html"
+  ],
+  "dependencies": {
+    "angular": "~1.4"
+  }
+}
