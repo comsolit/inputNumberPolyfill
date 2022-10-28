@@ -1,3 +1,6 @@
+**THIS REPO IS UNMAINTAINED / A NEW MAINTAINER IS NEEDED**
+=================
+
 # Polyfill for Input type="number"
 
 This Polyfill adds buttons to step up and down the value of an
